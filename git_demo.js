@@ -5,7 +5,7 @@ const myWriter = fs.writeFile('note.txt', 'The first content', () => {
 });
 
 
-let myAppender = fs.appendFile('note.txt', 'content from the appendbranch', (err) => {
+let myAppender = fs.appendFile('note.txt', '    content from the appendbranch', (err) => {
     if (err) {
         throw err;
         return;
